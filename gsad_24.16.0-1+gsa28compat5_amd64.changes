@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Wed, 21 Oct 2026 15:00:00 +0000
+Source: gsad
+Binary: gsad gsad-dbgsym
+Architecture: amd64
+Version: 24.16.0-1+gsa28compat5
+Distribution: kali-rolling
+Urgency: medium
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Changed-By: Local Builder <local@localhost>
+Description:
+ gsad       - remote network security auditor - web interface
+Changes:
+ gsad (24.16.0-1+gsa28compat5) kali-rolling; urgency=medium
+ .
+   * Accept either installed GVM runtime ABI (22 or 23) at build time.
+     Select matching private public headers and explicit SONAMEs without
+     installing or replacing libgvm-dev or either runtime package.
+   * Validate ELF linkage and generated dependency against the selected ABI.
+   * Preserve the GSA 28.3.0 login/session fix from the previous revision.
+Checksums-Sha1:
+ 1b427e6381b572ddf8480b74bb3171fd58452420 400236 gsad-dbgsym_24.16.0-1+gsa28compat5_amd64.deb
+ c1c4e6b34a99d6e671e8e815218869f9e47cac6b 9446 gsad_24.16.0-1+gsa28compat5_amd64.buildinfo
+ 38b38cb324fc417b4590d82ef4efcc683068e7b7 146008 gsad_24.16.0-1+gsa28compat5_amd64.deb
+Checksums-Sha256:
+ f5be45bc79079e46fd0b2cbf90a9da33a0fa4771b9853873e537ea01bebe8d07 400236 gsad-dbgsym_24.16.0-1+gsa28compat5_amd64.deb
+ 2a765d07a8aa8a1de4d50183995b6a2a5f903f6abb50c0bbcbcdee02f65a624c 9446 gsad_24.16.0-1+gsa28compat5_amd64.buildinfo
+ 1e4c72a2520367b1c578d8f2c4b9942d554633f8f8ab9003de80332aa49f6623 146008 gsad_24.16.0-1+gsa28compat5_amd64.deb
+Files:
+ b96eb5c6c5a57fee77abffaf95c79768 400236 debug optional gsad-dbgsym_24.16.0-1+gsa28compat5_amd64.deb
+ 3025a2cf704380bb33300e009cd560dc 9446 admin optional gsad_24.16.0-1+gsa28compat5_amd64.buildinfo
+ 2cd06346d8b8986947894a5b53976daf 146008 admin optional gsad_24.16.0-1+gsa28compat5_amd64.deb
